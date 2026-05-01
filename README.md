@@ -1,2 +1,2 @@
 # git_tutorial
-git basic lessons
+git and github basic lessons
