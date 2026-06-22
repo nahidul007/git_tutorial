@@ -80,6 +80,96 @@ You should see the URL listed for both `fetch` and `push`.
 
 ---
 
+## 🚀 How this repo was uploaded (VS Code → GitHub)
+
+This section documents the exact workflow used to publish this folder, for reference and reuse on future cohorts.
+
+### Step 1 — Open the folder in VS Code
+
+- Launch VS Code
+- **File → Open Folder**
+- Select the `R-by-Nahid-Cohort-4` folder
+
+### Step 2 — Open the Source Control panel
+
+- Click the **Source Control** icon in the left sidebar
+- Or use the shortcut: `Ctrl+Shift+G`
+
+### Step 3 — Initialize the repository
+
+- Click **Initialize Repository**
+- This converts the folder into a Git repository
+
+### Step 4 — Stage all files
+
+- All files appear under **Changes**
+- Hover over "Changes" → click the **+** icon to stage everything at once (works the same whether there are 5 files or 500)
+
+### Step 5 — Commit
+
+- Type a short message in the input box, e.g. `initial upload`
+- Click **✓ Commit** (or `Ctrl+Enter`)
+
+### Step 6 — Publish to GitHub
+
+- Click **Publish Branch**
+- Choose:
+  - GitHub account (sign in if it's your first time)
+  - Repository name (defaults to the folder name)
+  - **Public** or **Private**
+- VS Code creates the GitHub repo, connects it, and pushes everything — no manual commands required
+
+✅ **Done.** All files are now live on GitHub.
+
+---
+
+## 🔁 Updating this repo later
+
+Whenever new files are added or existing ones are edited:
+
+| Step | Action |
+|------|--------|
+| 1 | Open Source Control panel (`Ctrl+Shift+G`) |
+| 2 | Stage changed files (click **+**) |
+| 3 | Write a commit message → click **✓ Commit** |
+| 4 | Click **Sync Changes** (↑ icon) to push to GitHub |
+
+> 💡 **Tip:** If working from more than one computer, always **Pull** (↓ icon) before making new changes, to avoid push conflicts.
+
+---
+
+## 🧠 Underlying concept
+
+```
+Edit file        →  Working directory   (changes exist only on your computer)
+   ↓ stage (+)
+Staging area      (marks "ready to save")
+   ↓ commit
+Local repository   (permanent snapshot, still local only)
+   ↓ push / sync
+GitHub             (now visible online)
+```
+
+VS Code's buttons are just a visual layer over the same Git commands (`git add`, `git commit`, `git push`) — nothing about the underlying process changes.
+
+---
+
+## 📚 Course content
+
+| File type | Description |
+|-----------|--------------|
+| `Class-XX.R` | Weekly class scripts |
+| `*.csv` | Practice datasets |
+| `*.png` | Visualizations referenced in class |
+| `quarto.qmd` / `quarto.html` | Rendered course notes |
+
+---
+
+## 🙋 Maintained by
+
+**Nahid** — Omics Learning Center
+Cancer biology & bioinformatics education, in English and Bangla.
+
 **Quick map:**
 - **A** → folder that's never touched GitHub
 - **B** → joining or continuing work on a repo that already exists
